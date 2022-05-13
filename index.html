@@ -1,0 +1,54 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <title>Encriptador</title>
+
+</head>
+
+<body>
+    
+    <header>
+
+        <div class="header">
+            <h1 class="logo"> <img src="./img/logo.png" alt="logo"></h1>
+
+            <h2 class="titulo">Encriptador web</h2>
+        </div>
+
+    </header>
+    <main>
+        <textarea cols="70" rows="10" id="ingreso" class="input-padron" required placeholder="Ingresa el texto aqui"></textarea>
+       
+
+        <div>
+
+            <p id="warning">Solo letras minúsculas y sin acentos</p>
+            <div class="botones">
+            <input id="encriptar-b" type="submit" value="Encriptar">
+            <input id="desencriptar-b" type="submit" value="Desencriptar">
+
+        </div>
+
+        
+        <div>
+            <svg class="box"></svg>
+            <span id="texto-box">Ingresa texto example</span>
+
+         <input id="copiar-b" onclick="copiarAlPortapapeles('texto-box')" type="submit" value="Copiar">
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/Encriptador.js"></script>	
+    <script src="js/Desencriptador.js"></script>
+    <script src="js/copiar.js"></script>		
+</body>
+</html>
