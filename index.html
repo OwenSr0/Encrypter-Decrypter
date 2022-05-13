@@ -22,6 +22,7 @@
 
     </header>
     <main>
+        <section>
         <textarea cols="70" rows="10" id="ingreso" class="input-padron" required placeholder="Ingresa el texto aqui"></textarea>
        
 
@@ -29,26 +30,27 @@
 
             <p id="warning">Solo letras minúsculas y sin acentos</p>
             <div class="botones">
-            <input id="encriptar-b" type="submit" value="Encriptar">
-            <input id="desencriptar-b" type="submit" value="Desencriptar">
+            <input id="encriptar-b" onclick="Encrypt()" type="submit" value="Encriptar">
+            <input id="desencriptar-b" onclick="Decrypt()" type="submit" value="Desencriptar">
 
         </div>
-
-        
+        </section>
+        <section>
         <div>
             <svg class="box"></svg>
             <span id="texto-box">Ingresa texto example</span>
 
          <input id="copiar-b" onclick="copiarAlPortapapeles('texto-box')" type="submit" value="Copiar">
         </div>
+        </section>
     </main>
 
     <footer>
 
     </footer>
 
-    <script src="js/Encriptador.js"></script>	
-    <script src="js/Desencriptador.js"></script>
+    <script src="js/encrypt.js"></script>	
+    <script src="js/decrypt.js"></script>
     <script src="js/copiar.js"></script>		
 </body>
 </html>
